@@ -2,6 +2,10 @@ name: 部署到腾讯云函数
 
 on:
   workflow_dispatch: 
+  watch:
+  push:
+    types: started
+    
 
 jobs:
   build:
